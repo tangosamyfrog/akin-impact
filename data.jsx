@@ -167,16 +167,32 @@ const CAUSES = [
   { glyph: '04', title: 'Education & Animal welfare', desc: 'University curricula at NUS, Kaplan, polytechnics; mentorship cohorts; and SAAC volunteer-portal redesign for the animal-welfare community.', meta: '3 active programmes' },
 ];
 
-/* ── PARTNERS (real list from PVPA + AOTY decks) ─────────────────────────────────────────── */
+/* ── PARTNERS ─────────────────────────────────────────── */
 const PARTNERS = [
-  'NVPC',                'TTAB',                'NTUC',
-  'Touch Community',     'SAAC',                'Go!Mama',
-  'Temasek Foundation',  'WWF',                 'TTSH',
-  'BossMama',            'Finn Partners',       'Oangle',
-  'Rinna AI',            'raiSE',               'Access SG',
-  'The Local Farm',      'Rainbow Centre',      'Willing Hearts',
-  'NUS · TJC · Kaplan',  'SAFRA Punggol',       'Singapore Computing Society',
-  'PA · SG75',           'AISG',                'Project Signal',
+  { name: 'NVPC',                       href: 'https://www.nvpc.org.sg' },
+  { name: 'TTAB',                       href: 'https://www.ttab.org.sg/' },
+  { name: 'NTUC',                       href: 'https://www.ntuc.org.sg' },
+  { name: 'Touch Community',            href: 'https://www.touch.org.sg' },
+  { name: 'SAAC',                       href: null },
+  { name: 'Go!Mama',                    href: 'https://gomama.com.sg/' },
+  { name: 'Temasek Foundation',         href: 'https://www.temasekfoundation.org.sg' },
+  { name: 'WWF',                        href: 'https://www.wwf.sg' },
+  { name: 'TTSH',                       href: 'https://www.ttsh.com.sg' },
+  { name: 'Temasek JC',                 href: 'https://www.temasekjc.moe.edu.sg' },
+  { name: 'RICE Comms',                 href: 'https://ricecomms.com' },
+  { name: 'Oangle',                     href: 'https://www.oangle.com.sg' },
+  { name: 'Rinna AI',                   href: null },
+  { name: 'raiSE',                      href: 'https://www.raise.sg' },
+  { name: 'Access SG',                  href: 'https://www.access-sg.co/' },
+  { name: 'The Local Farm',             href: 'https://thelocalfarm.sg/' },
+  { name: 'Rainbow Centre',             href: 'https://www.rainbowcentre.org.sg' },
+  { name: 'Willing Hearts',             href: 'https://www.willinghearts.org.sg' },
+  { name: 'ICDL / Kaplan',             href: 'https://www.icdlasia.org' },
+  { name: 'SAFRA Punggol',             href: 'https://www.safra.sg/clubhouses/punggol' },
+  { name: 'Singapore Computing Society',href: 'https://www.scs.org.sg' },
+  { name: 'PA · SG75',                 href: 'https://www.pa.gov.sg' },
+  { name: 'AISG',                       href: 'https://aisingapore.org' },
+  { name: 'NUS',                        href: 'https://www.nus.edu.sg' },
 ];
 
 /* ── HONEST LEARNINGS · 8 retained, contextualised ─────────────────────────────────────────── */

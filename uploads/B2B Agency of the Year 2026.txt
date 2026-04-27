@@ -1,0 +1,369 @@
+B2B Agency 
+of the Year
+20
+26
+
+00 ENTRY DETAILS | B2B AGENCY OF THE YEAR
+
+
+
+
+Our incisive methodology supported clients and partners in articulating their purpose througha comprehensive range of campaigns and strategies.
+Fiona Lo,
+APAC Marketing Manager
+Valerie Koh,
+Marketing & Sales Manager
+Ruth Smalley,
+Content Manager
+“Working with AKIN has been instrumental in our success at Supermetrics in the APAC market. Their expertise in APAC B2B go-to-market consultancy has been instrumental in refining our digital paid strategy. With a global HQ in Finland, their skilful campaign localisation knowledge that has ensured our messaging and strategy resonates across diverse markets in APAC.”
+“Working with AKIN on our ABM campaign was a fantastic experience. From the start, they took the time to understand our ideal customers, refine our messaging, and create a highly targeted approach. They also set up and optimised HubSpot automations and workflows, ensuring a smooth lead management process from marketing to sales. Their team felt like an extension of our own—proactive, strategic, and always willing to go the extra mile. Thanks to their expertise, everything was managed seamlessly from a marketing perspective before we handed the leads over to sales. If you’re looking for a marketing partner who truly understands ABM and marketing automation, I can’t recommend AKIN enough!”
+“The team at Akin is collaborative, creative and responsive. Every action is followed up with a desire to stay one step ahead, and their ability to handle technically complex topics with accuracy and rigor are one of the reasons our partnership continues to be a successful one.”
+Multinational Marketing Data Integration Company
+Asia’s First Dedicated Cybersecurity Firm
+Singapore Government-backed Deep Tech Investor & Ecosystem Builder
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+Clickhere towatch our testimonial video!
+
+> 3 mil
+Annual Revenue (SGD)
+~14% growth from 2024, driven by global account expansion, AI tools & new multi-year contracts
+16%
+Gross Margin 2025
+Gross margin at ~16%, improved from 14% through operational efficiencies
+Our 2025
+Key Performance Highlights
+& What made the team Proud
+7
+14
+6
+Markets/Regions Expanded
+In order to building APAC support for client with in-market consultants
+With actual invoiced implementation as AKIN expands as AI-led agency: Partners now refer 35%+ of new business, up from 30% in 2024
+With pro-bono engagements with the following causes:
+New EnablingPartners
+New Pro-bono
+Impact Clients
+• Expanded in-market support across Korea, Thailand, Finland, Indonesia, Australia & Hong Kong
+• FAO Partners (Korea Gov fund), Finnish government, 6 AI vendors, Regional agencies, AWS & NTUC
+• WWF (Climate change)
+• Touch Community (Cyberbullying)
+• TTAB Association (Education)
+• Go!Mama (Empowerment)
+
+9
+• Supermetrics
+• Priority Pass 
+• SoftwareOne
+• Scrum Alliance
+• Gambling Regulatory Authority
+Accounts Renewed & Retained
+New Clients include
+01 PERFORMANCE | B2B AGENCY OF THE YEAR
+
+
+
+
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+IH -  SGD 721K (Meta + Google)
+SM- EUR 657K/950sgd (Meta + LI +Google)
+Total: 1.67mil + 1.052 = 2.73mil from 1mil
+
+Margin: (950+721+380)/2730
+
+
+Click-Through Rate (CTR) improved by 37.4% to 0.43% 
+
+Beyond clients’ success, we quantify collective social impact as our Performance Metrics
+CTR Improvement YoY
+→ Supermetrics, Phillip Nova, Scrum Alliance, Imperial harvest, AWS, GRA, Blackpanda & Metrodata
+Cost Per Click (Blended)
+37.4
+%
+
+16.9
+%
+Across performance accounts, pegging average deal value at $20,000, we delivered an estimated ROAS of 44x, up from 34.8x in 2024, driven by higher conversion quality
+
+
+Account strength: Retained and grew key accounts through performance excellence, APAC specialisation, and increased recognition across APAC.
+
+70% of clients are pan-APAC regional scope of work.
+
+Estimated ROAS
+44
+x
+
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+Retention: Strength in B2B specialization drove higher client renewals and contract extensions
+9 key Accounts Renewed and Retained including
+[Supermetrics / Stamford American / Phillip Nova / Scrum Alliance]
+
+Expansion: Partnered with Supermetrics and AWS to enter new markets/products with a digital-first AKIN strategy
+Active across 7 markets: SG, HK, MY, IN, KR, FI, AU — 3 new territories added vs 2024
+
+Co-creation: Future proofing through solidifying trust, co-creating success, and embracing new technologies
+Deployed AI solutions with 7 clients; launched GenAI-powered content workflows and automated lead nurturing for B2B pipeline acceleration
+Account strength: Retained and grew key accounts through performance excellence, APAC specialisation, and increased recognition in APAC 
+9 New Accounts with with 7 New Multi-year contracts including
+[Supermetrics / Scrum Alliance / Stamford American / Phillip Nova]
+Strength in product/domain specialization drove higher client renewals and contract extensions: 9 key Accounts Renewed and Retained
+1. Expansion: Partnered with Supermetrics and AWS to enter new markets/products with an AI-first AKIN strategy.
+
+2. Co-creation of value: Future proofing through solidifying trust, and embracing new technologies
+
+3. Deployed AI solutions for 7 clients; launched GenAI-powered content workflows and automated lead nurturing for pipeline acceleration
+KEY BUSINESS IMPACT
+
+Actual PIPELINE Revenue attributed to AKIN’s Campaigns:
+
+
+
+
+
+
+
+Our 2.32M clicks -> 6,000 leads collectively
+USD 125 Mil+
+Averaged across 9 active accounts in 2025, we achieved
+16.9% decrease in CPC, decreased to SGD 0.78
+01 PERFORMANCE | B2B AGENCY OF THE YEAR
+
+
+
+
+6500/145 125 mil with 6000 leads @ 20,000 and 20000/450= 44 x roas
+
+
+We stopped selling hours. We started shipping intelligence & market access.
+Three proprietary methodologies. Two production AI systems. One document standard. All deployed in 2025.
+THE PREMISE
+Every agency claims AI in 2026. What separates the category is whether AI is a workflow add-on — or a named, versioned, client-referenceable system. AKIN ships the latter, with the same discipline software teams ship releases.
+AI SYSTEM · PRODUCTION
+AKIN Knowledge Engine
+Supabase pgvector · Voyage AI voyage-3-large · Claude API · hybrid BM25/vector retrieval · cross-encoder reranking. Deployed on client engagements.
+AI SYSTEM · LIVE
+Strategic Intelligence Pipeline
+11-agent two-stream architecture (Pitch + Ops). Context compaction, Haiku/Sonnet model routing. Collapses pitch cycles from weeks to days.
+METHODOLOGY · HBM
+Human Brand Methodology
+Proprietary insight-to-brand framework. Anchors qualitative research and brand architecture across all strategy engagements.
+METHODOLOGY · GEO
+Generative Engine Optimisation
+Post-SEO discipline for LLM-era discoverability. AKIN's named approach to surfaceability in answer engines.
+METHODOLOGY · AI-BM
+AI-Led Behavioural Modelling
+Decision architecture for regulated B2B. Applied to Collinson / Priority Pass behaviour-based rewards research.
+THE THESIS
+Naming is an act of accountability. A named system has a version, a maintainer, a changelog — and a client who can ask "what's new in v3?"
+AKIN · Proprietary systems · Production-deployed 2025 · Engineering practice, not prompt hobbyism
+02 PRODUCT | B2B AGENCY OF THE YEAR 
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+5
+
+​​
+​​
+ABM Across 
+8 JAPAC Markets
+The brief: Expand Supermetrics — a leading marketing intelligence platform — across eight APAC territories, navigating distinct market dynamics in Australia, Singapore, and Thailand to drive enterprise client acquisition.
+Success Story 1:
+02 PRODUCT | B2B AGENCY OF THE YEAR 
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+​​
+AKIN led their B2B account-based marketing (ABM) powered by market insights and performance marketing.
+
+Our approach began with identifying key ICP profiles and conducting demand analysis across multiple markets. By leveraging search insights, we assessed markets’ data maturity levels to understand market nuances and differentiated targeting strategies. 
+Market-Specific Strategies
+Expanded Engagement Touchpoints
+Localised Go-to-Market Assets
+AKIN built a full account-based marketing engine anchored in three product pillars.
+ICP profiling and demand analysis
+We leveraged search insights and AI-powered persona modelling to assess data maturity levels market-by-market, producing differentiated targeting strategies per territory.
+Localised Go-to-Market Assets
+Digital ads, whitepapers, and verified customer testimonial content — each crafted to resonate with B2B professionals at the commercial consideration stage.
+Expanded Engagement Architecture:
+Re-engagement channels and sustained nurture flows to maintain consideration across long B2B sales cycles.
+1
+2
+3
+02 PRODUCT | B2B AGENCY OF THE YEAR 
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+​​
+​​
+>800
+The strategic discipline paid off at scale. 
+
+APAC outperformed both EMEA and NAM regions on key metrics.
+Market Development co-campaign launched by Supermetrics & LinkedIn
+overall sign ups for regional SuperSummit Virtual Event
+~€8 million
+2025 pipeline converted totaled 
+~€8 million, attributed solely to the APAC region
+~35%
+lower Cost per MQL compared to global benchmarks (EMEA/NAM)
+02 PRODUCT | B2B AGENCY OF THE YEAR 
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+AWS planned lead-generation programs with partners across APAC, focusing on India, SEA, and ANZ. AKIN supported market research, turning insights into data-driven creative outputs for partner-led ABM campaigns.
+
+We continue our third year of collaboration on the Together, We Innovate webinar series, showcasing insights from trusted partners and successful customers across industries like retail and manufacturing, covering topics such as AI, machine learning, and cloud modernization.
+Accelerating cloud adoption for business transformation through partner-led campaigns
+Success Story 2:
+02 PRODUCT | B2B AGENCY OF THE YEAR 
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+AKIN's multi-year partnership with AWS illustrates the long-term value of a research-led B2B product. 
+
+We translate complex technical propositions — AI, machine learning, cloud modernisation — into content that enterprise decision-makers actually read and share. 
+
+Qualitative interviews with customers across retail, manufacturing, and pharmacy informed the Together We Innovate webinar series and a suite of opinion-led white papers co-authored with regional KOLs.
+3,000
+Qualified leads acquired
+27
+Assets created
+Inclusive of white papers, digital rollouts and research decks
+4
+Countries
+Qualitative analysis, research and insights
+Our Solution
+Research
+Synthesis
+Design
+02 PRODUCT | B2B AGENCY OF THE YEAR 
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+03 PEOPLE | B2B AGENCY OF THE YEAR 
+
+
+
+Employees are given autonomy to bid for projects aligned to their interests
+Our career pathways are clearly mapped to each team member. With 30 annual leave days that include well-being and volunteering days and overseas remote working  (70% take-up rate), our benefits tiers reflect a team that trusts and is trusted.
+
+67% of AKIN's directors are femaleThat number that reflects deliberate hiring, not aspiration. Our DE&I committee, run in partnership with RICE Communications, convenes regularly on topics including allyship and psychological safety. Parental and pet care support signal that inclusion extends beyond the office.Leadership is visible inside the work. Onboarding is founder-led. Senior directors serve as Volunteer Career Advisors across NTUC, WSG and IHL programmes — modelling externally the same mentorship culture practised internally.
+Inclusion and Diversity
+Steering people, culture & inclusion through purposeful leadership
+At AKIN, people investment is a business strategy, not a benefit line. Our 2025 approach was built on three commitments: capability development mapped to client outcomes, a retention environment built on trust and autonomy, and an inclusive leadership structure that reflects the markets we serve.
+
+Nine key accounts were renewed and retained in 2025 — a number directly tied to team continuity. The same consultants who onboard a client see the engagement through. They are the accountability infrastructure that makes long-tenure relationships possible with 95% Retention of talent.
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+In 2025, AKIN invested 400+ hours and SGD $55K in workforce developmentBeyond  retention benefit, this served as a capability pipeline. Every training investment was mapped to a live client deliverable.
+
+An addition $2,500 per-employee skills allowance is directed towards cross-functional training Trained across UI/UX, data and strategy, our T-shaped consultants now operate with fewer loops. The same person who designs the ABM research writes the LinkedIn creative and reads the attribution report. That model cut delivery cycles from weeks to days.
+
+AI fluency upskilling for EVERY SINGLE EMPLOYEE through partner Elgo translated directly into seven client AI deployments GenAI-powered content workflows and automated lead nurturing accelerated pipeline for Supermetrics and AWS. The consultants who attended the sessions ran the implementations within the same quarter.
+
+
+
+
+03 PEOPLE | B2B AGENCY OF THE YEAR 
+
+
+
+Development that produces client-ready capability
+Leadership-led Growth, Innovation and AI Transformation
+Steering people, culture & inclusion through purposeful leadership
+At AKIN, people investment is a business strategy, not a benefit line. Our 2025 approach was built on three commitments: capability development mapped to client outcomes, a retention environment built on trust and autonomy, and an inclusive leadership structure that reflects the markets we serve.
+
+Nine key accounts were renewed and retained in 2025 — a number directly tied to team continuity. The same consultants who onboard a client see the engagement through. They are the accountability infrastructure that makes long-tenure relationships possible with 95% Retention of talent.
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+
+The Stake in the Ground
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+"Most B2B agencies are hired to execute a brief. We think that's the wrong entry point — the brief is usually misguided when you don't have a real insight before entering a market."
+— Arvin Tang, Founder & CEO, AKIN
+We challenge the brief before we execute it.
+
+AKIN is structured upstream of the brief. Our Human Brand Methodology anchors every engagement in qualitative research before a dollar of media is committed. Our Strategic Intelligence Pipeline runs market and competitor intelligence before pitch. Our AI-Led Behavioural Modelling applies decision architecture before message. It's how we're billed — with insight as the first deliverable, not a preamble to it.
+Proof point: 84% CPA cut at Supermetrics JAPAC — achieved by challenging the targeting brief before launch 
+The Voice Behind the View
+A perspective that shows up in rooms, not just decks.
+
+AKIN's thought leadership reaches beyond client engagements. CEO Arvin Tang is a 2025 Tatler Gen.T Leader of Tomorrow — recognised across 9 Asian markets in Media & Marketing. 
+
+He guest lectures at NUS on Innovation Strategy, holds SBACC certification (PMC-10763), and contributes to the national TTAB AI Council architecture.
+Proof point: Tatler Asia exclusive: 'How to stay human in the age of AI', CNA938 Our Town feature: Digital consultancy for non-profits, 500+ professionals reached annually across SAFRA, NTUC, WSG and IHLs
+Proof point: The only digital agency to receive Champion of Good 2024/25 — highest tier, only one of 78 recipients nationwide.
+We don't just participate in the B2B ecosystem. We help build it regionally.
+
+In 2025, our work sat inside the TTAB AI Council, NVPC's 10th anniversary programming, the NTUC skilling portfolio, and four government GTM collaborations across Singapore, Finland, South Korea and Japan. 
+
+Our cross-agency do-good network activates 150+ employees across Oangle, NVPC and RICE Comms on societal causes, with $60K pledged annually to pro-bono work. 
+Industry Contribution
+04 PERSPECTIVE | B2B AGENCY OF THE YEAR 
+
+We empower diverse groups 
+Mid-careerists
+We support mid-careerists through board participation and volunteering with TTAB to drive a future-ready skills ecosystem within Singapore’s tech sector
+
+Singapore Marketing Professionals & SME owners
+We engage Singapore marketing professionals and SME owners through knowledge-sharing through Leading Municorns (founder), with Marketing PMEBs and co-creating projects with SMEs, including The Local Farmers in SG
+
+Mothers
+We support mothers by guiding social enterprises like BossMama and Go!Mama with go-to-market strategies, fundraising, and impact assessment to improve the lives of breastfeeding moms
+
+Students
+We mentor students by collaborating with universities and polytechnics to develop digital marketing curricula and training lecturers at Kaplan, alongside student mentorship programmes
+
+Partners 
+We advocate societal cause evangelism by driving the adoption of impactful societal causes among partners like Oangle, Rinna AI, and RICE Comms to amplify social good
+
+Founders and Leaders 
+We drive active industry catalysing by supporting founders and leaders of social enterprises, NGOs, NPOs, and ground-up initiatives to scale impact through platforms like SAFRA, TJC, OVA, Singapore Computing Society New Media Council, and PA’s SG75
+
+Mission-driven Organisations
+We allocate a $50,000 in-kind budget for pro/low-bono work, providing crucial marketing support to beneficiaries
+
+Mentees 
+We continue our commitment to mentorship, with our MD serving as a Volunteer Career Advisor for the fourth consecutive year, guiding individuals and leading 12+ industry programmes with SAFRA, NTUC, e2i, WSG, and IHLS (RP, TJC)
+
+
+Perspective Made Real: Pods of Impact
+CONFIDENTIAL | FOR JUDGING PURPOSES ONLY
+We believed caregiving infrastructure was an untapped brand channel. Then we built the proof.
+
+Pods of Impact is AKIN's perspective in product form. Backed by NVPC and Temasek Foundation, POI converts nursing pod infrastructure into a purpose-built OOH network, allowing brands to reach mothers during high-dwell, high-trust care moments. Unlike mass-media OOH, the environment is captive and contextually earned.
+This is not a CSR initiative. It is a structural argument about where attention lives in markets that mass media misses — made real through the Go!Mama and AKIN ecosystems.
+Proof point: 20,000+ community members supported, 300 nursing pods targeted by 2027, 45+ impact partners activated
+04 PERSPECTIVE | B2B AGENCY OF THE YEAR 
+
+20,000+
+Supporting mummy community members 
+300
+Total nursing pods roll-out by 2027
+45+
+Impact partners  
+132+
+Humans Activated collectively across partners
+We empower diverse groups 
+Mid-careerists
+We support mid-careerists through board participation and volunteering with TTAB to drive a future-ready skills ecosystem within Singapore’s tech sector
+
+Singapore Marketing Professionals & SME owners
+We engage Singapore marketing professionals and SME owners through knowledge-sharing through Leading Municorns (founder), with Marketing PMEBs and co-creating projects with SMEs, including The Local Farmers in SG
+
+Mothers
+We support mothers by guiding social enterprises like BossMama and Go!Mama with go-to-market strategies, fundraising, and impact assessment to improve the lives of breastfeeding moms
+
+Students
+We mentor students by collaborating with universities and polytechnics to develop digital marketing curricula and training lecturers at Kaplan, alongside student mentorship programmes
+
+Partners 
+We advocate societal cause evangelism by driving the adoption of impactful societal causes among partners like Oangle, Rinna AI, and RICE Comms to amplify social good
+
+Founders and Leaders 
+We drive active industry catalysing by supporting founders and leaders of social enterprises, NGOs, NPOs, and ground-up initiatives to scale impact through platforms like SAFRA, TJC, OVA, Singapore Computing Society New Media Council, and PA’s SG75
+
+Mission-driven Organisations
+We allocate a $50,000 in-kind budget for pro/low-bono work, providing crucial marketing support to beneficiaries
+
+Mentees 
+We continue our commitment to mentorship, with our MD serving as a Volunteer Career Advisor for the fourth consecutive year, guiding individuals and leading 12+ industry programmes with SAFRA, NTUC, e2i, WSG, and IHLS (RP, TJC)
+
+
+B2B Agency 
+of the Year
+20
+26

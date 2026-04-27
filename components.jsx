@@ -15,8 +15,7 @@ const NAV_LINKS = [
 const Nav = ({ active, setActive, onApply }) => (
   <nav className="nav">
     <a href="https://www.helloakin.com" className="brand" style={{textDecoration:'none'}}>
-      <img src="assets/akin_element_dark.png" alt="AKIN" style={{height:28,width:'auto'}}/>
-      <span className="brand-name">AKIN</span>
+      <img src="assets/AKIN_Logo.png" alt="AKIN" style={{height:36,width:'auto'}}/>
       <span className="brand-tag">Impact</span>
     </a>
     <div className="nav-links">
@@ -380,7 +379,9 @@ const Partners = () => (
     </div>
     <div className="partners-grid">
       {PARTNERS.map((p,i) => (
-        <div key={i} className="partner-cell">{p}</div>
+        p.href
+          ? <a key={i} className="partner-cell" href={p.href} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none'}}>{p.name}</a>
+          : <div key={i} className="partner-cell">{p.name}</div>
       ))}
     </div>
   </section>
@@ -478,15 +479,6 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h6>Reports</h6>
-        <ul>
-          <li><a>2026 impact report</a></li>
-          <li><a>Quarterly outcomes</a></li>
-          <li><a>Methodology</a></li>
-          <li><a>Open data</a></li>
-        </ul>
-      </div>
-      <div>
         <h6>Connect</h6>
         <ul>
           <li><a>impact@helloakin.com</a></li>
@@ -504,9 +496,12 @@ const Footer = () => (
 );
 
 /* ── APPLY MODAL (multi-step) ─────────────────────────────────────────── */
+const FORMSPREE_ID = 'YOUR_FORMSPREE_ID'; // replace after creating form at formspree.io
+
 const ApplyModal = ({ open, onClose }) => {
   const [step, setStep] = useState(0);
   const [data, setData] = useState({ kind: null, org: '', focus: null, scope: '', email: '' });
+  const [submitting, setSubmitting] = useState(false);
   const total = 4;
 
   useEffect(() => { if (!open) { setStep(0); setData({ kind: null, org: '', focus: null, scope: '', email: '' }); } }, [open]);
@@ -515,6 +510,27 @@ const ApplyModal = ({ open, onClose }) => {
   const next = () => setStep(s => Math.min(s+1, total));
   const back = () => setStep(s => Math.max(s-1, 0));
   const set = (k,v) => setData(d => ({ ...d, [k]: v }));
+
+  const submit = async () => {
+    setSubmitting(true);
+    try {
+      await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          type: data.kind,
+          organisation: data.org,
+          'cause-area': data.focus,
+          outcome: data.scope,
+          _replyto: data.email,
+          email: data.email,
+        }),
+      });
+    } finally {
+      setSubmitting(false);
+      setStep(total);
+    }
+  };
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -587,8 +603,8 @@ const ApplyModal = ({ open, onClose }) => {
               {step > 0 ? (
                 <button className="btn-ghost" onClick={back}>← Back</button>
               ) : <span/>}
-              <button className="btn-primary" onClick={next}>
-                {step === total - 1 ? 'Submit application' : 'Continue'} <span>→</span>
+              <button className="btn-primary" onClick={step === total - 1 ? submit : next} disabled={submitting}>
+                {submitting ? 'Submitting…' : (step === total - 1 ? 'Submit application' : 'Continue')} <span>→</span>
               </button>
             </div>
           </>
