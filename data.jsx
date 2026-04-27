@@ -15,7 +15,7 @@ const HONOURS = [
    $50K pledged yearly to pro-bono · cross-agency network 150+ employees · $60K/yr pledged
    Quantify hours @ $350: 1,000h × $350 = $350K · take whichever $$ is HIGHER → $350K */
 const KPIS = [
-  { label: 'Volunteer hours · committed',       value: '1,000+',  delta: 'Across 5 years · 132+ humans', dir: 'up' },
+  { label: 'Volunteer hours · committed',       value: '1,270+',  delta: 'Across 5 years · 132+ humans', dir: 'up' },
   { label: 'Hours valuation @ S$350/hr',         value: 'S$350K',  delta: 'Higher than cash pledged',     dir: 'up' },
   { label: 'Pro-bono cash pledged · annually',   value: 'S$60K',   delta: 'Up from S$50K in 2024',        dir: 'up' },
   { label: 'Partner orgs activated · cumulative',value: '45+',     delta: '12 new in 2025',               dir: 'up' },
@@ -41,10 +41,10 @@ const TENANTS = [
 ];
 
 const HOURS_PLEDGED = [
-  { label: 'Strategy & Brand',     value: 320, color: '#FF8A6B' },
-  { label: 'Creative & Design',    value: 280, color: '#C25B3F' },
-  { label: 'Research & Insights',  value: 220, color: '#5B7B9A' },
-  { label: 'AI Build & Engineering', value: 180, color: '#2C3E50' },
+  { label: 'Strategy & Brand',     value: 400, color: '#FF8A6B' },
+  { label: 'Creative & Design',    value: 350, color: '#C25B3F' },
+  { label: 'Research & Insights',  value: 280, color: '#5B7B9A' },
+  { label: 'AI Build & Engineering', value: 240, color: '#2C3E50' },
 ];
 
 const REACH = [
@@ -122,7 +122,7 @@ const INITIATIVES = [
     id: 'i-rise',
     status: 'upcoming',
     title: 'RISE · 6-module youth + parent AI curriculum',
-    desc: 'A national youth skilling programme with AISG, ACE.sg, NVPC, SCAPE and JTC. Six modules, two tracks (youth + parent). Looking for facilitators and curriculum reviewers ahead of pilot.',
+    desc: 'A national youth skilling programme with ACE.sg. Six modules, two tracks (youth + parent). Looking for facilitators and curriculum reviewers ahead of pilot.',
     tags: ['Education', 'Curriculum', 'AI literacy'],
     progress: 18,
     progressLabel: '18% scoped · pilot Q3',
@@ -143,13 +143,10 @@ const ENGAGE = [
 /* Lifted from B2B AOTY content bank + COG/PVPA decks.
    Internal initiatives + DE&I + brand-guardian style engagements. */
 const PROJECTS = [
-  { id: 1, title: 'NVPC Company of Good · 10th Anniversary',     partner: 'NVPC',                        year: '2025', region: 'SG', sector: 'Consulting',     kind: 'pro-bono', tags: ['FGDs','Brand','B2C activation'], outcomeLbl: 'National volunteering momentum', outcomeNum: 'Live' },
-  { id: 2, title: 'Pods of Impact · brand & operating system',   partner: 'Go!Mama × Temasek Fdn × NVPC', year: '2024', region: 'SG', sector: 'Co-creation',    kind: 'pro-bono', tags: ['Brand','Network'], outcomeLbl: 'Mothers community supported', outcomeNum: '20,000+' },
-  { id: 3, title: 'TTAB AI Council · concept & seeding',         partner: 'TTAB × NTUC',                 year: '2025', region: 'SG', sector: 'AI for Good',    kind: 'pro-bono', tags: ['Policy','AI'], outcomeLbl: 'Founding partners seeded', outcomeNum: '5 (AISG · AWS · Tata · JTC · IAL)' },
   { id: 4, title: 'DigitallyUs · cyber-wellness narrative',      partner: 'Touch Community Services',    year: '2025', region: 'SG', sector: 'Education',      kind: 'pro-bono', tags: ['Narrative','Brand','Funding'], outcomeLbl: 'Programme positioning', outcomeNum: 'In flight' },
   { id: 5, title: 'SAAC Volunteer Portal · onboarding redesign', partner: 'SAAC',                        year: '2025', region: 'SG', sector: 'Animal welfare', kind: 'pro-bono', tags: ['UX','Service','Retention'], outcomeLbl: 'Volunteer matching uplift', outcomeNum: 'Target +30%' },
   { id: 6, title: 'WWF #WeGotThis · climate campaign',           partner: 'WWF',                         year: '2024', region: 'SG', sector: 'AI for Good',    kind: 'pro-bono', tags: ['Climate','Campaign'], outcomeLbl: 'Cross-agency activation', outcomeNum: '4 partners' },
-  { id: 7, title: 'BossMama / Go!Mama · GTM & fundraising',      partner: 'Social enterprises',          year: '2024', region: 'SG', sector: 'Social Impact',  kind: 'pro-bono', tags: ['Strategy','GTM','Fundraising'], outcomeLbl: 'Mothers reached', outcomeNum: '7,500+' },
+  { id: 7, title: 'BossMama / Go!Mama · GTM & fundraising',      partner: 'Social enterprises',          year: '2024', region: 'SG', sector: 'Social Impact',  kind: 'pro-bono', tags: ['Strategy','GTM','Fundraising'], outcomeLbl: 'Mothers reached', outcomeNum: '7,500+', href: null },
   { id: 8, title: 'TTSH · Breast Cancer Awareness Month',        partner: 'Tan Tock Seng Hospital',      year: '2023', region: 'SG', sector: 'Social Impact',  kind: 'pro-bono', tags: ['Health','Campaign'], outcomeLbl: 'Sunset · ad-hoc model', outcomeNum: 'Learnings filed' },
 ];
 

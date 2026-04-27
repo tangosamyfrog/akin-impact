@@ -4,23 +4,31 @@
 const { useState, useEffect, useMemo } = React;
 
 /* ── NAV ─────────────────────────────────────────── */
+const NAV_LINKS = [
+  { label: 'Dashboard',   id: 'dashboard'   },
+  { label: 'Initiatives', id: 'initiatives' },
+  { label: 'Projects',    id: 'projects'    },
+  { label: 'Causes',      id: 'causes'      },
+  { label: 'Report',      id: 'report'      },
+];
+
 const Nav = ({ active, setActive, onApply }) => (
   <nav className="nav">
-    <div className="brand">
-      <div className="brand-mark">A</div>
+    <a href="https://www.helloakin.com" className="brand" style={{textDecoration:'none'}}>
+      <img src="assets/akin_element_dark.png" alt="AKIN" style={{height:28,width:'auto'}}/>
       <span className="brand-name">AKIN</span>
       <span className="brand-tag">Impact</span>
-    </div>
+    </a>
     <div className="nav-links">
-      {['Dashboard','Initiatives','Projects','Causes','Report'].map(l => (
-        <button key={l}
-          className={active === l ? 'active' : ''}
-          onClick={() => setActive(l)}>
-          {l}
-        </button>
+      {NAV_LINKS.map(({label, id}) => (
+        <a key={label} href={`#${id}`}
+          className={active === label ? 'active' : ''}
+          onClick={() => setActive(label)}>
+          {label}
+        </a>
       ))}
       <button className="btn-primary" onClick={onApply}>
-        Apply for funding <span>→</span>
+        Apply for a pro-bono project <span>→</span>
       </button>
     </div>
   </nav>
@@ -40,16 +48,17 @@ const Hero = ({ onApply }) => (
         Outcomes published quarterly — including the ones that didn't work.
       </p>
       <div className="hero-ctas">
-        <button className="btn-ink">Read 2026 report <span>→</span></button>
+        <a className="btn-ink" href="https://www.helloakin.com/post/our-purpose" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none'}}>Read more on our purpose <span>→</span></a>
         <button className="btn-ghost" onClick={onApply}>Apply for help</button>
         <span className="eyebrow alt" style={{marginLeft: 8}}>
           <span className="dot"></span> 5 LIVE · 1 UPCOMING · 3 OPEN FOR VOLUNTEERS
         </span>
       </div>
       <div className="hero-stats">
-        <div className="stat-card"><div className="num peach">1,000+</div><div className="lbl">volunteer hours · 5 yrs</div></div>
+        <div className="stat-card"><div className="num peach">1,270+</div><div className="lbl">volunteer hours · 5 yrs</div></div>
         <div className="stat-card"><div className="num slate">45+</div><div className="lbl">partner orgs activated</div></div>
         <div className="stat-card"><div className="num ink">S$60K</div><div className="lbl">pro-bono pledged · annually</div></div>
+        <div className="stat-card"><div className="num peach">&gt;S$500K</div><div className="lbl">cumulative since 2018</div></div>
       </div>
     </div>
 
@@ -105,7 +114,7 @@ const Donut = ({ data }) => {
 const Dashboard = () => {
   const [hover, setHover] = useState(null);
   return (
-    <section data-screen-label="02 Dashboard">
+    <section id="dashboard" data-screen-label="02 Dashboard">
       <div className="section-head">
         <div>
           <div className="eyebrow alt"><span className="dot"></span> 02 / IMPACT DASHBOARD · LIVE</div>
@@ -192,7 +201,7 @@ const Dashboard = () => {
           <div className="label">HOURS VALUATION · @ S$350/HR</div>
           <div className="value">S$350K</div>
           <div style={{marginTop: 18, paddingTop: 18, borderTop: '1px solid rgba(61,26,15,0.18)', display:'grid', gap: 10, font:"500 13px/1.4 'Inter'"}}>
-            <div style={{display:'flex', justifyContent:'space-between'}}><span>Skill-based pro-bono hours</span><span style={{font:"500 12px 'JetBrains Mono'"}}>1,000+ h · 71%</span></div>
+            <div style={{display:'flex', justifyContent:'space-between'}}><span>Skill-based pro-bono hours</span><span style={{font:"500 12px 'JetBrains Mono'"}}>1,270+ h · 71%</span></div>
             <div style={{display:'flex', justifyContent:'space-between'}}><span>Cash pledged · annually</span><span style={{font:"500 12px 'JetBrains Mono'"}}>S$60K · 17%</span></div>
             <div style={{display:'flex', justifyContent:'space-between'}}><span>Cross-agency activation</span><span style={{font:"500 12px 'JetBrains Mono'"}}>150+ ppl · 12%</span></div>
           </div>
@@ -233,7 +242,7 @@ const InitiativeCard = ({ i, onEngage }) => (
 );
 
 const Initiatives = ({ onEngage }) => (
-  <section data-screen-label="03 Initiatives">
+  <section id="initiatives" data-screen-label="03 Initiatives">
     <div className="section-head">
       <div>
         <div className="eyebrow"><span className="dot"></span> 03 / LIVE NOW · OPEN TO ENGAGE</div>
@@ -282,7 +291,7 @@ const Projects = () => {
   }, [filter]);
 
   return (
-    <section data-screen-label="05 Projects">
+    <section id="projects" data-screen-label="05 Projects">
       <div className="section-head">
         <div>
           <div className="eyebrow"><span className="dot"></span> 05 / PRO-BONO &amp; LOW-BONO ARCHIVE</div>
@@ -304,8 +313,8 @@ const Projects = () => {
         </span>
       </div>
       <div className="project-list">
-        {filtered.map((p,i) => (
-          <div key={p.id} className="project-row">
+        {filtered.map((p,i) => {
+          const inner = <>
             <span className="idx">{String(i+1).padStart(2,'0')}</span>
             <div>
               <div className="title">{p.title}</div>
@@ -320,8 +329,11 @@ const Projects = () => {
             </div>
             <div className="year">{p.year}</div>
             <span className="arrow">↗</span>
-          </div>
-        ))}
+          </>;
+          return p.href
+            ? <a key={p.id} className="project-row" href={p.href} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none'}}>{inner}</a>
+            : <div key={p.id} className="project-row">{inner}</div>;
+        })}
       </div>
     </section>
   );
@@ -329,7 +341,7 @@ const Projects = () => {
 
 /* ── CAUSES ─────────────────────────────────────────── */
 const Causes = () => (
-  <section data-screen-label="06 Causes">
+  <section id="causes" data-screen-label="06 Causes">
     <div className="section-head">
       <div>
         <div className="eyebrow alt"><span className="dot"></span> 06 / FOUR CAUSES WE BACK</div>
@@ -376,7 +388,7 @@ const Partners = () => (
 
 /* ── HONEST LEARNINGS ─────────────────────────────────────────── */
 const Learnings = () => (
-  <section data-screen-label="08 Learnings" style={{borderTop:'none', paddingTop: 24}}>
+  <section id="report" data-screen-label="08 Learnings" style={{borderTop:'none', paddingTop: 24}}>
     <div className="learnings">
       <div className="head">
         <div className="eyebrow"><span className="dot"></span> 08 / WHAT DIDN'T WORK</div>
@@ -435,7 +447,7 @@ const CTABand = ({ onApply }) => (
         </p>
       </div>
       <div className="right">
-        <button className="btn-ink" onClick={onApply}>Apply for funding <span>→</span></button>
+        <button className="btn-ink" onClick={onApply}>Apply for pro bono projects <span>→</span></button>
         <button className="btn-paper" onClick={onApply}>Pledge skilled hours <span>→</span></button>
       </div>
     </div>
@@ -461,7 +473,7 @@ const Footer = () => (
         <ul>
           <li><a>Live initiatives</a></li>
           <li><a>Office hours</a></li>
-          <li><a>Apply for funding</a></li>
+          <li><a>Apply for a pro-bono project</a></li>
           <li><a>Pledge hours</a></li>
         </ul>
       </div>
