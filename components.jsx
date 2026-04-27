@@ -37,14 +37,14 @@ const Nav = ({ active, setActive, onApply }) => (
 const Hero = ({ onApply }) => (
   <header className="hero" data-screen-label="01 Hero">
     <div>
-      <div className="eyebrow"><span className="dot"></span> 2026 IMPACT REPORT · NOW LIVE</div>
+      <div className="eyebrow"><span className="dot"></span> AKIN's Annual Impact Report</div>
       <h1>
         Lift together,<br />
         <span className="underline">measure honestly.</span>
       </h1>
       <p className="hero-sub">
         We fund and run programmes that strengthen civic infrastructure across SEA.
-        Outcomes published quarterly — including the ones that didn't work.
+        Initiatives updated quarterly, including learnings across projects.
       </p>
       <div className="hero-ctas">
         <a className="btn-ink" href="https://www.helloakin.com/post/our-purpose" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none'}}>Read more on our purpose <span>→</span></a>
@@ -57,14 +57,14 @@ const Hero = ({ onApply }) => (
         <div className="stat-card"><div className="num peach">1,270+</div><div className="lbl">volunteer hours · 5 yrs</div></div>
         <div className="stat-card"><div className="num slate">45+</div><div className="lbl">partner orgs activated</div></div>
         <div className="stat-card"><div className="num ink">S$60K</div><div className="lbl">pro-bono pledged · annually</div></div>
-        <div className="stat-card"><div className="num peach">&gt;S$500K</div><div className="lbl">cumulative since 2018</div></div>
+        <div className="stat-card"><div className="num peach">&gt;S$500K</div><div className="lbl">cumulative since 2020</div></div>
       </div>
     </div>
 
     <aside className="live-panel">
-      <div className="live-panel-eyebrow">PEOPLE TOUCHED · 2025 ROLLING</div>
+      <div className="live-panel-eyebrow">Beneficiaries Served · 2020 Rolling</div>
       <div className="live-big">132+</div>
-      <div className="live-sub">humans activated across cohorts · 20K mothers reached via Pods</div>
+      <div className="live-sub">People Touched, with 20,000 Mothers reached via Go!Mama Pods-of-impact</div>
       <div className="live-chart-wrap">
         <div className="live-chart-legend">
           <span className="l">Reach · last 12 months</span>
@@ -197,7 +197,7 @@ const Dashboard = () => {
         </div>
 
         <div className="dash-card peach kpi">
-          <div className="label">HOURS VALUATION · @ S$350/HR</div>
+          <div className="label">ESTIMATED VALUE</div>
           <div className="value">S$350K</div>
           <div style={{marginTop: 18, paddingTop: 18, borderTop: '1px solid rgba(61,26,15,0.18)', display:'grid', gap: 10, font:"500 13px/1.4 'Inter'"}}>
             <div style={{display:'flex', justifyContent:'space-between'}}><span>Skill-based pro-bono hours</span><span style={{font:"500 12px 'JetBrains Mono'"}}>1,270+ h · 71%</span></div>
@@ -347,8 +347,7 @@ const Causes = () => (
         <h2 className="section-title">Where we put<br/>our <span className="accent">weight.</span></h2>
       </div>
       <p className="section-aside">
-        We're not generalists. Programmes cluster around four areas where agency craft
-        — brand, digital, research — meaningfully moves the needle.
+        As social impact catalyst, we gather partners and friends to deliver skillbased volunteering to causes we support. Let's meaningfully move the needle across Brand, Digital, Research, Creatives domains together.
       </p>
     </div>
     <div className="causes-grid">
@@ -495,9 +494,9 @@ const Footer = () => (
         <h6>Connect</h6>
         <ul>
           <li><a href="mailto:marketing@helloakin.com">marketing@helloakin.com</a></li>
-          <li><a>LinkedIn</a></li>
-          <li><a>Newsletter</a></li>
-          <li><a>Press kit</a></li>
+          <li><a href="https://www.linkedin.com/company/helloakin/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.helloakin.com/blog" target="_blank" rel="noopener noreferrer">Thought leadership</a></li>
+          <li><a href="https://www.helloakin.com" target="_blank" rel="noopener noreferrer">Home</a></li>
         </ul>
       </div>
     </div>

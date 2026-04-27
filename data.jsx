@@ -16,8 +16,8 @@ const HONOURS = [
    Quantify hours @ $350: 1,000h × $350 = $350K · take whichever $$ is HIGHER → $350K */
 const KPIS = [
   { label: 'Volunteer hours · committed',       value: '1,270+',  delta: 'Across 5 years · 132+ humans', dir: 'up' },
-  { label: 'Hours valuation @ S$350/hr',         value: 'S$350K',  delta: 'Higher than cash pledged',     dir: 'up' },
-  { label: 'Pro-bono cash pledged · annually',   value: 'S$60K',   delta: 'Up from S$50K in 2024',        dir: 'up' },
+  { label: 'Estimated Value',                      value: 'S$350K',  delta: 'Higher than cash pledged',     dir: 'up' },
+  { label: 'Pro-bono skillbased hours committed', value: 'S$60K',   delta: 'Up from S$50K in 2024',        dir: 'up' },
   { label: 'Partner orgs activated · cumulative',value: '45+',     delta: '12 new in 2025',               dir: 'up' },
 ];
 
@@ -173,7 +173,7 @@ const PARTNERS = [
   { name: 'TTAB',                       href: 'https://www.ttab.org.sg/' },
   { name: 'NTUC',                       href: 'https://www.ntuc.org.sg' },
   { name: 'Touch Community',            href: 'https://www.touch.org.sg' },
-  { name: 'SAAC',                       href: null },
+  { name: 'SAAC',                       href: 'https://www.saac.org.sg/' },
   { name: 'Go!Mama',                    href: 'https://gomama.com.sg/' },
   { name: 'Temasek Foundation',         href: 'https://www.temasekfoundation.org.sg' },
   { name: 'WWF',                        href: 'https://www.wwf.sg' },
