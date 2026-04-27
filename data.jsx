@@ -218,8 +218,8 @@ const LEARNINGS = [
 const TESTIMONIAL = {
   body: "AKIN didn't just hand us a brand and walk away. They sat in our team meetings for months — that's why the work outlasted the engagement. Their team felt like an extension of our own — proactive, strategic, and always willing to go the extra mile.",
   name: 'Prakash Menon',
-  role: 'Senior Advisor',
-  org: 'Finn Partners (formerly RICE Communications)',
+  role: 'Group Director, National Blood Donation Programme',
+  org: 'Singapore Red Cross',
   meta: 'Cross-agency DE&I & volunteering · Singapore · 2025',
 };
 

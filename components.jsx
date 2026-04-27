@@ -494,7 +494,7 @@ const Footer = () => (
       <div>
         <h6>Connect</h6>
         <ul>
-          <li><a>impact@helloakin.com</a></li>
+          <li><a href="mailto:marketing@helloakin.com">marketing@helloakin.com</a></li>
           <li><a>LinkedIn</a></li>
           <li><a>Newsletter</a></li>
           <li><a>Press kit</a></li>
