@@ -325,6 +325,26 @@
     .cause-card p { font: 400 13px/1.5 'Inter'; color: var(--ink-2); margin-top: auto; }
     .cause-card .meta { font: 500 11px/1 'JetBrains Mono'; color: var(--slate); letter-spacing: 0.1em; text-transform: uppercase; }
 
+    /* ── SDG BAR ───────────────────────────────────── */
+    .sdg-bar {
+      display: flex; align-items: center; gap: 28px;
+      margin-top: 24px; padding: 20px 28px;
+      background: var(--paper); border: 1px solid var(--rule); border-radius: 12px;
+      flex-wrap: wrap;
+    }
+    .sdg-logo { height: 52px; width: auto; flex-shrink: 0; }
+    .sdg-chips { display: flex; gap: 8px; flex-shrink: 0; }
+    .sdg-chip {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      width: 64px; height: 52px; border-radius: 6px; color: #fff; gap: 3px;
+    }
+    .sdg-chip span:first-child { font: 700 18px/1 'Space Grotesk'; }
+    .sdg-chip span:last-child  { font: 500 8px/1.2 'Inter'; text-align: center; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.9; }
+    .sdg-text {
+      font: 400 13px/1.55 'Inter'; color: var(--ink-2);
+      margin: 0; flex: 1; min-width: 220px;
+    }
+
     /* ── PARTNERS ───────────────────────────────────── */
     .partners-grid {
       display: grid; grid-template-columns: repeat(6,1fr); gap: 1px;

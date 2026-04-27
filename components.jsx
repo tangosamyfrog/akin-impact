@@ -361,6 +361,18 @@ const Causes = () => (
         </div>
       ))}
     </div>
+
+    <div className="sdg-bar">
+      <img src="assets/sdg_wheel.png" alt="UN Sustainable Development Goals" className="sdg-logo"/>
+      <div className="sdg-chips">
+        <div className="sdg-chip" style={{background:'#4C9F38'}}><span>3</span><span>Good Health</span></div>
+        <div className="sdg-chip" style={{background:'#C5192D'}}><span>4</span><span>Quality Education</span></div>
+        <div className="sdg-chip" style={{background:'#FF3A21'}}><span>5</span><span>Gender Equality</span></div>
+      </div>
+      <p className="sdg-text">
+        Our programmes map to three UN Sustainable Development Goals — improving health equity for women and families, widening access to quality education across all life stages, and advancing gender equality through economic participation and meaningful social inclusion.
+      </p>
+    </div>
   </section>
 );
 
