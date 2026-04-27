@@ -1,0 +1,206 @@
+/* ============================================================
+   AKIN Design System — Colors & Type tokens
+   Locked from helloakin.com Webflow tokens (see COLOUR_PALETTE.md).
+   Multi-division: BAU (electric blue), AI (dark+orange),
+                   Investments (TBD), Impact (TBD)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ── Type families ───────────────────────────────────── */
+  --font-display: 'Space Grotesk', 'Neue Haas Grotesk', 'Helvetica Neue', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-display-xl: clamp(64px, 9vw, 144px);
+  --fs-display-l:  clamp(48px, 6vw, 96px);
+  --fs-h1: 56px; --fs-h2: 40px; --fs-h3: 28px; --fs-h4: 22px;
+  --fs-body-l: 18px; --fs-body: 16px; --fs-body-s: 14px;
+  --fs-caption: 12px; --fs-eyebrow: 13px;
+
+  --lh-tight: 1.02; --lh-snug: 1.15; --lh-body: 1.5;
+  --tracking-display: -0.02em; --tracking-eyebrow: 0.14em;
+
+  --type-display: 700 var(--fs-display-l) / var(--lh-tight) var(--font-display);
+  --type-h1: 600 var(--fs-h1) / var(--lh-snug) var(--font-display);
+  --type-h2: 600 var(--fs-h2) / var(--lh-snug) var(--font-display);
+  --type-h3: 500 var(--fs-h3) / var(--lh-snug) var(--font-display);
+  --type-body: 400 var(--fs-body) / var(--lh-body) var(--font-body);
+  --type-eyebrow: 500 var(--fs-eyebrow) / 1.2 var(--font-body);
+
+  /* ============================================================
+     ROOT BRAND — locked from Webflow
+     ============================================================ */
+  --akin-extra-dark:  #0B1215;
+  --akin-dark:        #0A1114;   /* primary canvas — EVERY page */
+  --akin-dark-neutral:#29292C;
+  --akin-blue-cta:    #2136F1;   /* electric blue, CTAs */
+  --akin-periwinkle:  #979EF4;   /* primary accent */
+  --akin-purple-blue: #B6ADFB;
+  --akin-white:       #E7E6E4;   /* warm off-white body */
+  --akin-pure-white:  #FFFFFF;
+  --akin-error:       #A93838;
+
+  /* Legacy aliases */
+  --akin-blue:       var(--akin-blue-cta);
+  --akin-blue-deep:  var(--akin-dark);
+  --akin-paper:      var(--akin-white);
+  --akin-ink:        var(--akin-dark);
+
+  /* Shared neutral ramp (warm) */
+  --neutral-50:  #F8F7F2;
+  --neutral-100: #E7E6E4;
+  --neutral-200: #DBDAD6;
+  --neutral-300: #CDCCC7;
+  --neutral-400: #898989;
+  --neutral-500: #666666;
+  --neutral-600: #29292C;
+  --neutral-700: #1B1D20;
+  --neutral-800: #0F1316;
+  --neutral-900: #0A1114;
+
+  /* ── Division heroes — BAU defaults */
+  --hero-50:  #EAEBFF;
+  --hero-100: #C8CCFD;
+  --hero-200: #979EF4;
+  --hero-300: #6C75F3;
+  --hero-400: #4757F2;
+  --hero-500: #2136F1;
+  --hero-600: #1A2BC2;
+  --hero-700: #131F8F;
+  --hero-800: #0C145B;
+  --hero-900: #0A1114;
+
+  --secondary-500: #979EF4;
+  --accent-1: #B6ADFB;
+
+  /* Semantic */
+  --bg:        var(--akin-dark);
+  --bg-alt:    var(--akin-extra-dark);
+  --bg-card:   var(--akin-dark-neutral);
+  --fg1:       var(--akin-white);
+  --fg2:       rgba(231,230,228,0.6);
+  --fg3:       rgba(231,230,228,0.4);
+  --fg-on-hero: var(--akin-white);
+  --border:    rgba(235,233,226,0.13);
+
+  --success: #2EBF89;
+  --warning: #EAB308;
+  --danger:  var(--akin-error);
+  --info:    var(--hero-500);
+
+  /* Spacing */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --space-9: 96px; --space-10: 128px;
+
+  /* Radius */
+  --r-xs: 2px; --r-sm: 4px; --r-md: 8px; --r-lg: 16px; --r-xl: 24px; --r-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.4);
+  --shadow-hero: 0 24px 80px rgba(33,54,241,0.3);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 140ms; --dur-base: 240ms; --dur-slow: 480ms;
+}
+
+/* ============================================================
+   DIVISION OVERRIDES
+   ============================================================ */
+[data-division="bau"] { /* defaults */ }
+
+/* AI — Burnt orange · Dark-mode-first
+   Secondary: Electric Lime (split-complement to orange — distinctive, computational)
+   Tertiary:  Soft warm grey (lighter contrast block backgrounds)
+   Was: cyan (clashed w/ Investments cyan — replaced) */
+[data-division="ai"] {
+  --hero-50:  #FFF1E6;
+  --hero-100: #FFD9B8;
+  --hero-200: #FFB077;
+  --hero-300: #FF8A3D;
+  --hero-400: #F26A1A;
+  --hero-500: #C2410C;
+  --hero-600: #9A330A;
+  --hero-700: #732608;
+  --hero-800: #4D1905;
+  --hero-900: #2A0F03;
+  --secondary-500: #C6F24E;   /* Electric Lime — split-complement, high-contrast */
+  --secondary-300: #DCFA86;
+  --secondary-700: #8FB624;
+  --tertiary-500: #1B1D20;    /* Tertiary surface (graphite block) */
+  --surface-elevated: #16191D; /* lighter contrast block on dark canvas */
+  --surface-subtle: #21252A;   /* even lighter step for compare/contrast */
+  --canvas: #0A1114;
+  --shadow-hero: 0 24px 80px rgba(194,65,12,0.35);
+}
+
+/* INVESTMENTS — Lighter Midnight Violet · Dark
+   Secondary: Cyan accent (matches user's reference)
+   Tertiary:  Deep indigo */
+[data-division="investments"] {
+  --hero-50:  #EDE6FF;
+  --hero-100: #D9CCFF;
+  --hero-200: #C9B8FF;
+  --hero-300: #A78BFA;
+  --hero-400: #8B6BF5;
+  --hero-500: #6D4FE6;
+  --hero-600: #5635CC;
+  --hero-700: #3D2899;
+  --hero-800: #261866;
+  --hero-900: #1B1248;
+  --secondary-500: #67E8F9;   /* Cyan */
+  --secondary-300: #A5F3FC;
+  --tertiary-500: #312E81;
+  --surface-elevated: #16191D;
+  --surface-subtle: #21252A;
+  --canvas: #0A1114;
+  --shadow-hero: 0 24px 80px rgba(109,79,230,0.30);
+}
+
+/* IMPACT — Peach Duotone on paper
+   Secondary: Slate Blue (cool, civic, humane — counterweights warm peach)
+   Tertiary:  Deep coffee (ink for body) */
+[data-division="impact"] {
+  --hero-50:  #FFF4EE;
+  --hero-100: #FFE9DD;
+  --hero-200: #FFD9C8;
+  --hero-300: #FFC4AC;
+  --hero-400: #FFA68A;
+  --hero-500: #FF8A6B;        /* Peach 500 */
+  --hero-600: #E5694A;
+  --hero-700: #C25B3F;
+  --hero-800: #7A3221;
+  --hero-900: #3D1A0F;
+  --secondary-500: #5B7B9A;   /* Slate Blue */
+  --secondary-300: #94B3CC;
+  --secondary-700: #3F5972;
+  --tertiary-500: #2C3E50;    /* Deep slate ink */
+  --surface-elevated: #FFFFFF; /* lighter contrast block on paper */
+  --surface-subtle: #F5EDE5;   /* warm grey-peach contrast block */
+  --canvas: #FFF4EE;          /* peach-50 paper */
+  --shadow-hero: 0 24px 80px rgba(255,138,107,0.25);
+}
+
+html, body {
+  font: var(--type-body);
+  color: var(--fg1);
+  background: var(--bg);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 { font: var(--type-h1); letter-spacing: var(--tracking-display); margin: 0; }
+h2 { font: var(--type-h2); letter-spacing: var(--tracking-display); margin: 0; }
+h3 { font: var(--type-h3); margin: 0; }
+p  { margin: 0; }
+
+.eyebrow {
+  font: var(--type-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--fg2);
+}
