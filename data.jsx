@@ -122,7 +122,7 @@ const INITIATIVES = [
     id: 'i-rise',
     status: 'upcoming',
     title: 'RISE · 6-module youth + parent AI curriculum',
-    desc: 'A national youth skilling programme with ACE.sg. Six modules, two tracks (youth + parent). Looking for facilitators and curriculum reviewers ahead of pilot.',
+    desc: 'A national youth skilling programme designed for a leading Vietnam University. Six modules, two tracks (youth + parent). Looking for facilitators and curriculum reviewers ahead of pilot.',
     tags: ['Education', 'Curriculum', 'AI literacy'],
     progress: 18,
     progressLabel: '18% scoped · pilot Q3',
