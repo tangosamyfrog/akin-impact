@@ -143,11 +143,11 @@ const ENGAGE = [
 /* Lifted from B2B AOTY content bank + COG/PVPA decks.
    Internal initiatives + DE&I + brand-guardian style engagements. */
 const PROJECTS = [
-  { id: 4, title: 'DigitallyUs · cyber-wellness narrative',      partner: 'Touch Community Services',    year: '2025', region: 'SG', sector: 'Education',      kind: 'pro-bono', tags: ['Narrative','Brand','Funding'], outcomeLbl: 'Programme positioning', outcomeNum: 'In flight' },
-  { id: 5, title: 'SAAC Volunteer Portal · onboarding redesign', partner: 'SAAC',                        year: '2025', region: 'SG', sector: 'Animal welfare', kind: 'pro-bono', tags: ['UX','Service','Retention'], outcomeLbl: 'Volunteer matching uplift', outcomeNum: 'Target +30%' },
-  { id: 6, title: 'WWF #WeGotThis · climate campaign',           partner: 'WWF',                         year: '2024', region: 'SG', sector: 'AI for Good',    kind: 'pro-bono', tags: ['Climate','Campaign'], outcomeLbl: 'Cross-agency activation', outcomeNum: '4 partners' },
-  { id: 7, title: 'BossMama / Go!Mama · GTM & fundraising',      partner: 'Social enterprises',          year: '2024', region: 'SG', sector: 'Social Impact',  kind: 'pro-bono', tags: ['Strategy','GTM','Fundraising'], outcomeLbl: 'Mothers reached', outcomeNum: '7,500+', href: null },
   { id: 8, title: 'TTSH · Breast Cancer Awareness Month',        partner: 'Tan Tock Seng Hospital',      year: '2023', region: 'SG', sector: 'Social Impact',  kind: 'pro-bono', tags: ['Health','Campaign'], outcomeLbl: 'Sunset · ad-hoc model', outcomeNum: 'Learnings filed' },
+  { id: 6, title: 'WWF #WeGotThis · climate campaign',           partner: 'WWF',                         year: '2024', region: 'SG', sector: 'AI for Good',    kind: 'pro-bono', tags: ['Climate','Campaign'], outcomeLbl: 'Cross-agency activation', outcomeNum: '4 partners' },
+  { id: 5, title: 'SAAC Volunteer Portal · onboarding redesign', partner: 'SAAC',                        year: '2025', region: 'SG', sector: 'Animal welfare', kind: 'pro-bono', tags: ['UX','Service','Retention'], outcomeLbl: 'Volunteer matching uplift', outcomeNum: 'Target +30%' },
+  { id: 7, title: 'Go!Mama · GTM & fundraising',                 partner: 'Social enterprises',          year: '2024', region: 'SG', sector: 'Social Impact',  kind: 'pro-bono', tags: ['Strategy','GTM','Fundraising'], outcomeLbl: 'Mothers reached', outcomeNum: '7,500+', href: null },
+  { id: 4, title: 'DigitallyUs · cyber-wellness narrative',      partner: 'Touch Community Services',    year: '2025', region: 'SG', sector: 'Education',      kind: 'pro-bono', tags: ['Narrative','Brand','Funding'], outcomeLbl: 'Programme positioning', outcomeNum: 'In flight' },
 ];
 
 const FILTERS = [
