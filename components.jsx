@@ -120,8 +120,8 @@ const Dashboard = () => {
           <h2 className="section-title">Outcomes, <span className="accent">not intentions.</span></h2>
         </div>
         <p className="section-aside">
-          A live cut of where the money, hours and partnerships actually went.
-          Refreshed weekly from project-management and finance systems.
+          A live cut of where the effort, hours and partnerships actually went.
+          Refreshed quarterly from project-management and finance systems.
         </p>
       </div>
 
