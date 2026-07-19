@@ -12,6 +12,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 
 const App = () => {
   const [active, setActive] = useState('Dashboard');
+  const [view, setView] = useState('report'); // 'report' | 'masterclass'
   const [modalOpen, setModalOpen] = useState(false);
   const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
 
@@ -22,20 +23,50 @@ const App = () => {
   const openApply = () => setModalOpen(true);
   const onEngage = () => setModalOpen(true);
 
+  const openMasterclass = () => {
+    setView('masterclass');
+    window.scrollTo({ top: 0 });
+  };
+
+  // From the Masterclass view, a report nav link returns to the report and scrolls.
+  const onNavigate = (label) => {
+    setActive(label);
+    if (view !== 'report') {
+      setView('report');
+      const id = (NAV_LINKS.find(l => l.label === label) || {}).id;
+      if (id) setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+        else window.scrollTo({ top: 0 });
+      }, 30);
+    }
+  };
+
+  const nav = (
+    <Nav active={active} setActive={setActive} view={view}
+      onNavigate={onNavigate} onMasterclass={openMasterclass} onApply={openApply}/>
+  );
+
   return (
     <>
       <div className="page">
-        <Nav active={active} setActive={setActive} onApply={openApply}/>
-        <Hero onApply={openApply}/>
-        <Dashboard density={tweaks.dashboardDensity}/>
-        <Initiatives onEngage={onEngage}/>
-        <Engage onApply={openApply}/>
-        <Projects/>
-        <Causes/>
-        <Partners/>
-        {tweaks.showLearnings && <Learnings/>}
-        {tweaks.showQuote && <Quote/>}
-        <CTABand onApply={openApply}/>
+        {nav}
+        {view === 'masterclass' ? (
+          <Masterclass/>
+        ) : (
+          <>
+            <Hero onApply={openApply}/>
+            <Dashboard density={tweaks.dashboardDensity}/>
+            <Initiatives onEngage={onEngage}/>
+            <Engage onApply={openApply}/>
+            <Projects/>
+            <Causes/>
+            <Partners/>
+            {tweaks.showLearnings && <Learnings/>}
+            {tweaks.showQuote && <Quote/>}
+            <CTABand onApply={openApply}/>
+          </>
+        )}
         <Footer/>
       </div>
 

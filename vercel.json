@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "api/coach.js": {
+      "includeFiles": "masterclass/**"
+    }
+  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

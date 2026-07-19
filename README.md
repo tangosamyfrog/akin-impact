@@ -33,11 +33,18 @@ Design system: peach-duotone paper canvas (Impact division colours). Built mobil
 ```
 akin-impact/
 ├── index.html          # Entry point — all CSS, font imports, loads JSX files via Babel
-├── app.jsx             # Root React app, TweaksPanel (paper variants, section toggles)
+├── app.jsx             # Root React app, view switch (report | masterclass), TweaksPanel
 ├── components.jsx      # All UI components (Nav, Hero, Dashboard, Initiatives, etc.)
 ├── data.jsx            # All content data — edit this for copy/stats/partner changes
+├── masterclass.jsx     # Narrative Coach UI (two-panel workspace: Learn + Improve)
+├── masterclass-data.jsx# Structured lesson content for the Coach's Learn mode
 ├── tweaks-panel.jsx    # Dev toggle panel (paper warmth, section visibility)
-├── vercel.json         # SPA routing — all paths serve index.html
+├── vercel.json         # SPA routing + bundles masterclass/ into the api function
+├── api/
+│   └── coach.js        # Serverless proxy → Claude Haiku 4.5 (Mode 2 assessment)
+├── masterclass/
+│   ├── knowledge-base.md   # Canonical Coach content — the AI reads this at runtime
+│   └── PRD.md              # Product spec for the Narrative Coach
 └── assets/
     ├── colors_and_type.css     # AKIN design tokens (shared across divisions)
     ├── AKIN_Logo.png           # Primary AKIN mark (blue pentagon) — nav + favicon
@@ -180,6 +187,38 @@ Fonts: **Space Grotesk** (headings), **Inter** (body), **JetBrains Mono** (mono/
 | SAAC URL | `data.jsx` → `PARTNERS[4].href` | Confirm which SAAC org first |
 | Rinna AI URL | `data.jsx` → `PARTNERS[12].href` | Confirm URL |
 | TTAB URL | `data.jsx` → `PARTNERS[1].href` | Currently set — verify with NTUC TTAB |
+
+---
+
+## Masterclass — Narrative Coach
+
+A "Masterclass" tab (last nav link, before the Apply button) opens a full-screen **Narrative Coach**: Arvin's *Digital Storytelling for Social Good* masterclass turned into a self-serve coach for volunteers. It's a two-panel workspace — a left rail of the five frameworks plus an "Improve my story" mode; a right panel that teaches or coaches.
+
+**Two modes, two content sources:**
+
+| Mode | What it does | Powered by |
+|---|---|---|
+| **Learn** | Click-through lessons on the 5 frameworks (Story Map, HEART, Feel-Good Loop, CTA design, Where to Start) | `masterclass-data.jsx` — no model call, no cost |
+| **Improve my story** | Volunteer picks a goal + pastes a draft → gets quick wins + questions (no scores) | `api/coach.js` → **Claude Haiku 4.5**, reading `masterclass/knowledge-base.md` |
+
+**Editing content:**
+- Change a lesson card (Learn mode) → edit `masterclass-data.jsx`.
+- Change the coach's voice / assessment behaviour (Improve mode / the AI) → edit `masterclass/knowledge-base.md`. The serverless function reads it at request time, so no code change is needed.
+
+State (current framework, goal, draft, last result) is anonymous, session-only, and mirrored to `localStorage` — a refresh doesn't wipe work; nothing is stored server-side.
+
+### Activating Mode 2 (one-time)
+
+Improve mode calls Claude via a Vercel serverless function that holds the API key. **Learn mode works with or without this** — until the key is set, Improve mode shows a friendly "coach isn't switched on yet" message.
+
+1. In the Vercel dashboard for `akin-impact` → Settings → Environment Variables, add:
+   ```
+   ANTHROPIC_API_KEY = sk-ant-...
+   ```
+   (Or via CLI: `vercel env add ANTHROPIC_API_KEY`.)
+2. Redeploy (any push to `main`, or `vercel --prod`).
+
+**Guardrails baked into `api/coach.js`:** requests are accepted only from the `impact.helloakin.com` origin, input length and output tokens are capped, there's a light per-IP rate limit, and the knowledge-base system prompt is cached to cut cost. Each assessment is a fresh, stateless call. The model is set as one constant (`MODEL`) at the top of the file.
 
 ---
 

@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { label: 'Report',      id: 'report'      },
 ];
 
-const Nav = ({ active, setActive, onApply }) => (
+const Nav = ({ active, setActive, view, onNavigate, onMasterclass, onApply }) => (
   <nav className="nav">
     <a href="https://www.helloakin.com" className="brand" style={{textDecoration:'none'}}>
       <img src="assets/AKIN_Logo.png" alt="AKIN" style={{height:36,width:'auto'}}/>
@@ -21,11 +21,15 @@ const Nav = ({ active, setActive, onApply }) => (
     <div className="nav-links">
       {NAV_LINKS.map(({label, id}) => (
         <a key={label} href={`#${id}`}
-          className={active === label ? 'active' : ''}
-          onClick={() => setActive(label)}>
+          className={view === 'report' && active === label ? 'active' : ''}
+          onClick={() => onNavigate(label)}>
           {label}
         </a>
       ))}
+      <button className={`mc-nav-link ${view === 'masterclass' ? 'active' : ''}`}
+        onClick={onMasterclass}>
+        Masterclass
+      </button>
       <button className="btn-primary" onClick={onApply}>
         Apply for a pro-bono project <span>→</span>
       </button>
@@ -637,6 +641,7 @@ const ApplyModal = ({ open, onClose }) => {
 };
 
 Object.assign(window, {
+  NAV_LINKS,
   Nav, Hero, Dashboard, Initiatives, Engage, Projects, Causes,
   Partners, Learnings, Quote, CTABand, Footer, ApplyModal,
 });
