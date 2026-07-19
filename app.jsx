@@ -12,7 +12,9 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 
 const App = () => {
   const [active, setActive] = useState('Dashboard');
-  const [view, setView] = useState('report'); // 'report' | 'masterclass'
+  const [view, setView] = useState(
+    () => (window.location.hash === '#masterclass' ? 'masterclass' : 'report')
+  ); // 'report' | 'masterclass'
   const [modalOpen, setModalOpen] = useState(false);
   const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
 
@@ -20,11 +22,22 @@ const App = () => {
     document.body.dataset.paper = tweaks.paper === 'default' ? '' : tweaks.paper;
   }, [tweaks.paper]);
 
+  // Keep the view in sync with the URL hash (deep links, back/forward button).
+  useEffect(() => {
+    const onHash = () => {
+      if (window.location.hash === '#masterclass') { setView('masterclass'); window.scrollTo({ top: 0 }); }
+      else setView(v => (v === 'masterclass' ? 'report' : v));
+    };
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
+
   const openApply = () => setModalOpen(true);
   const onEngage = () => setModalOpen(true);
 
   const openMasterclass = () => {
     setView('masterclass');
+    if (window.location.hash !== '#masterclass') history.pushState(null, '', '#masterclass');
     window.scrollTo({ top: 0 });
   };
 

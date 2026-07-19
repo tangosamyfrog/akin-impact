@@ -338,13 +338,12 @@ const Masterclass = () => {
   const [draft, setDraft] = useState(saved.draft || '');
   const [result, setResult] = useState(saved.result || null);
   const line = useRef(mcHashPick(MC_SIGNATURE_LINES, (saved.seed ?? 3))).current;
-  const panelRef = useRef(null);
 
-  /* reset the card view whenever the framework changes */
+  /* reset the card view whenever the framework changes, and jump to the top */
   const pick = (id) => {
     setActive(id);
     if (id !== 'improve') setCard('promise');
-    if (panelRef.current) panelRef.current.scrollTop = 0;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   /* persist */
@@ -370,7 +369,7 @@ const Masterclass = () => {
       </div>
       <div className="mc-workspace">
         <McRail active={active} onPick={pick}/>
-        <section className="mc-panel" ref={panelRef}>
+        <section className="mc-panel">
           {!active && <McWelcome onPick={pick} line={line}/>}
           {fw && <McLesson fw={fw} card={card} setCard={setCard} onPick={pick}/>}
           {active === 'improve' &&
