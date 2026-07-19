@@ -181,13 +181,13 @@ const MC_FRAMEWORKS = [
     steps: {
       title: 'The starting sequence',
       items: [
-        { k: '1 · Pick the goal',    d: 'recruitment, fundraising, or awareness? The goal shapes everything downstream.' },
-        { k: '2 · Run the Story Map', d: 'get Who / Why / Tension / Change / Action clear.' },
-        { k: '3 · Find your one human', d: 'one beneficiary, one donor, one volunteer. Deep and singular beats broad and shallow.' },
-        { k: '4 · Draft rough',       d: 'write it badly first. Emotion before information.' },
-        { k: '5 · Check against HEART', d: 'fix the weakest letter.' },
-        { k: '6 · Design loop + CTA',  d: 'reward and next step.' },
-        { k: '7 · Test on a real person', d: 'watch their face. Refine. Repeat.' },
+        { k: 'Pick the goal',        d: 'recruitment, fundraising, or awareness? The goal shapes everything downstream.' },
+        { k: 'Run the Story Map',    d: 'get Who / Why / Tension / Change / Action clear.' },
+        { k: 'Find your one human',  d: 'one beneficiary, one donor, one volunteer. Deep and singular beats broad and shallow.' },
+        { k: 'Draft rough',          d: 'write it badly first. Emotion before information.' },
+        { k: 'Check against HEART',  d: 'fix the weakest letter.' },
+        { k: 'Design loop + CTA',    d: 'reward and next step.' },
+        { k: 'Test on a real person', d: 'watch their face. Refine. Repeat.' },
       ],
     },
     example: {
