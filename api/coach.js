@@ -60,7 +60,7 @@ Return ONLY:
 - 1 to 3 quick wins, each one concrete, doable, and phrased as an action,
 - 2 to 4 questions that help the volunteer strengthen the story themselves.
 
-No scores. No report cards. No headings inside the values. British English. No em dashes. Coach by question. Stay strictly inside the five frameworks; never invent facts about the volunteer's cause, and never drift into tension theory or AI prompting. If the draft is already strong, say so plainly and offer one stretch improvement rather than inventing criticism.`;
+No scores. No report cards. No headings inside the values. British English spelling. No em dashes. Any money figures use US dollars with the $ sign (for example "$30"), never pounds or the £ sign. Coach by question. Stay strictly inside the five frameworks; never invent facts about the volunteer's cause, and never drift into tension theory or AI prompting. If the draft is already strong, say so plainly and offer one stretch improvement rather than inventing criticism.`;
 
 const OUTPUT_SCHEMA = {
   type: 'object',

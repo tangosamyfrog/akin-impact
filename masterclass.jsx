@@ -27,6 +27,17 @@ const mcSave = (state) => {
 const McRail = ({ active, onPick }) => (
   <aside className="mc-rail">
     <div className="mc-rail-group">
+      <button
+        className={`mc-rail-item intro ${active === null ? 'active' : ''}`}
+        onClick={() => onPick(null)}>
+        <span className="mc-rail-n">✦</span>
+        <span>
+          <span className="mc-rail-name">Introduction</span>
+          <span className="mc-rail-tag">What this is, and how to use it</span>
+        </span>
+      </button>
+    </div>
+    <div className="mc-rail-group">
       <div className="mc-rail-head">Learn the frameworks</div>
       {MC_FRAMEWORKS.map(f => (
         <button key={f.id}
@@ -285,7 +296,7 @@ const McImprove = ({ goal, setGoal, draft, setDraft, result, setResult }) => {
 /* ── welcome (right panel, first load) ───────────────────── */
 const McWelcome = ({ onPick, line }) => (
   <div className="mc-welcome">
-    <div className="mc-eyebrow"><span className="dot"></span> AKIN Masterclass · Narrative Coach</div>
+    <div className="mc-eyebrow"><span className="dot"></span> AKIN Masterclass · Storytelling &amp; Narrative Genie</div>
     <h2>“{line}”</h2>
     <p className="mc-welcome-sub">
       This is Arvin’s Digital Storytelling masterclass, turned into a coach you can use on your own.
@@ -348,9 +359,13 @@ const Masterclass = () => {
     <div className="mc-shell">
       <div className="mc-intro">
         <div className="section-num">Masterclass</div>
-        <h1 className="mc-title">Narrative <span className="accent">Coach</span></h1>
+        <h1 className="mc-title">Storytelling &amp; Narrative <span className="accent">Genie</span></h1>
         <p className="mc-intro-sub">
-          Stories that recruit, raise, and raise awareness. Learn the frameworks, then coach your own draft.
+          Fifteen years of go-to-market craft, distilled for causes. AKIN has spent fifteen
+          years helping brands move people to act, and our founder Arvin has spent as many
+          years volunteering on the ground. This genie turns that hard-won storytelling craft
+          into a coach you can use yourself: learn the five frameworks, then have it sharpen
+          your own draft so your story actually gets people to volunteer, give, or share.
         </p>
       </div>
       <div className="mc-workspace">
