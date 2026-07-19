@@ -340,12 +340,14 @@ const Masterclass = () => {
   const line = useRef(mcHashPick(MC_SIGNATURE_LINES, (saved.seed ?? 3))).current;
   const wsRef = useRef(null);
 
-  /* reset the card view whenever the framework changes, and align the
-     workspace just under the sticky nav (not the whole page top) */
+  /* reset the card view whenever the framework changes, then scroll:
+     Introduction is the premise, so jump to the page top; everything else
+     aligns the workspace just under the sticky nav */
   const pick = (id) => {
     setActive(id);
     if (id !== 'improve') setCard('promise');
-    if (wsRef.current) wsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (id === null) window.scrollTo({ top: 0, behavior: 'smooth' });
+    else if (wsRef.current) wsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   /* persist */
