@@ -338,12 +338,14 @@ const Masterclass = () => {
   const [draft, setDraft] = useState(saved.draft || '');
   const [result, setResult] = useState(saved.result || null);
   const line = useRef(mcHashPick(MC_SIGNATURE_LINES, (saved.seed ?? 3))).current;
+  const wsRef = useRef(null);
 
-  /* reset the card view whenever the framework changes, and jump to the top */
+  /* reset the card view whenever the framework changes, and align the
+     workspace just under the sticky nav (not the whole page top) */
   const pick = (id) => {
     setActive(id);
     if (id !== 'improve') setCard('promise');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (wsRef.current) wsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   /* persist */
@@ -367,7 +369,7 @@ const Masterclass = () => {
           your own draft so your story actually gets people to volunteer, give, or share.
         </p>
       </div>
-      <div className="mc-workspace">
+      <div className="mc-workspace" ref={wsRef}>
         <McRail active={active} onPick={pick}/>
         <section className="mc-panel">
           {!active && <McWelcome onPick={pick} line={line}/>}
